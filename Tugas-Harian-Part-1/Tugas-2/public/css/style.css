@@ -75,3 +75,7 @@ a.text-center.responsive {
     text-align: center !important;
     color: white;
 }
+
+.text-center {
+    text-align: center;
+}

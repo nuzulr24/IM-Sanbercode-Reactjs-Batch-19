@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANBERCode - Bootcamp ReactJS</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="list-rapi">
+            <img src="public/img/logo.png" class="logo" alt="logo">
+            <ul class="list-rapi-2">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="artikel">
+        <h1 class="title">Hubungi Kami</h1>
+        <div class="postingan">
+            <div class="artikels" style="border-bottom: none">
+                <p class="konten">
+                    <b>Kantor: </b>Masih belum bangun</br>
+                    <b>Nomer Telepon: </b>089675925082</br>
+                    <b>Email: </b>hello@nuzul.space
+                </p>
+                <h1 class="text-center">Kirimkan Pesan</h1>
+                <table style="text-align: left">
+                    <tr>
+                        <th>Nama</th>
+                        <th><input type="text"></th>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <th><input type="text"></th>
+                    </tr>
+                    <tr>
+                        <th>Jenis Kelamin</th>
+                        <th>
+                            <label><input type="radio">Laki-laki</label>
+                            <label><input type="radio">Perempuan</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Pesan Anda</th>
+                        <th>
+                            <textarea row="5"></textarea>
+                        </th>
+                    </tr>
+                </table>
+                <a href="index.html" style="margin-top: 4px;">Kembali ke halaman utama</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="http://" class="text-center responsive" target="_blank" rel="noopener noreferrer">copyright by Nuzul Zaif Mahdiono R</a>
+    </footer>
+    <script>
+        var nyekrol = window.scrollY;
+        var nav = document.getElementsByClassName("list-rapi");
+
+        window.addEventListener('scroll', function() {
+            var scroll = window.scrollY;
+            if(scroll >= 30) {
+                nav.classList.add('list-rapi-fix');
+            } else {
+                nav.classList.remove('list-rapi-fix');
+            }
+        });
+    </script>
+</body>
+
+</html>
