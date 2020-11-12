@@ -1,3 +1,5 @@
+// soal ke 1 
+
 var readBooks = require('./callback.js')
  
 var books = [
@@ -12,3 +14,5 @@ books.forEach(function(item, i) {
         console.log(bar)
     })
 })
+
+// soal ke 2
