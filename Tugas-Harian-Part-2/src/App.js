@@ -1,6 +1,8 @@
 import './App.css';
 import Form from './Component/Tugas-9/Form'
 import List from './Component/Tugas-10/List'
+import Lists from './Component/Tugas-12/Lists'
+import Timer from './Component/Tugas-11/Timer'
 
 function App() {
   let dataHargaBuah = [
@@ -12,7 +14,7 @@ function App() {
   ]
   return (
     <div className="App">
-      <Form/>
+      {/* <Form/>
       <br></br>
       <table>
             <tr>
@@ -25,7 +27,9 @@ function App() {
           <List name={item.nama} price={item.harga} weight={item.berat}/>
         )
       })}
-      </table>
+      </table> */}
+      <Lists/>
+      {/* <Timer/> */}
     </div>
   );
 }
