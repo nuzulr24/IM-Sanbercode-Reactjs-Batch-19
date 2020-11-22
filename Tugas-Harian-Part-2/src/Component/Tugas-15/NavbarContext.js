@@ -8,10 +8,6 @@ export const NavbarProvider = props => {
       setTema(tema === "light" ? "dark" : "light");
   };
 
-//   if(tema === "light") {
-//       color =
-//   }
-
   const color = tema === "light" ? "#333" : "#FFF";
   const background = tema === "light" ? "#FFF" : "#333";
 
